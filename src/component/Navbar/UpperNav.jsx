@@ -9,7 +9,7 @@ const UpperNav = () => {
     const dispatch = useDispatch();
     const showSearch = useSelector((state) => state.search.showSearch);
     return (
-        <div className='w-full md:px-3  py-0 border-b-1px border-d0d0d05e border-solid box-border flex items-center justify-center'>
+        <div className='w-full md:px-3  py-0 border-b-1px border-d0d0d05e border-solid box-border flex items-center justify-center z-50'>
             <div className=" h-16 w-3/4 flex items-center justify-between md:w-full">
                 <div className="flex items-center w-24 px-1 py-1 justify-center gap-1 rounded-sm font-bold text-sm outline-none         cursor-pointer bg-none border-solid border-1px border-gray-600 " onClick={() => { dispatch(explores(true)) }} >
                     <BsTextRight className='w-5 h-5' />
